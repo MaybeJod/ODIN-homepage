@@ -1,0 +1,27 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    /* colors */
+    --main-white:  #F4F5F1;
+    --aside-blue: #004bff;
+    --shade-color: #b1c9ff;
+
+    /* font family */
+    --ff-noto-sans: "Nato Sans", sans-serif;
+    /* font size */
+    --fs-large: 4rem;
+    --fs-medium: 2rem;
+    --fs-small:1rem;
+    
+}
+
+body {
+    background-color: var(--main-white);
+    font-family: var(--ff-noto-sans);
+}
+
+.container {
+
+}
