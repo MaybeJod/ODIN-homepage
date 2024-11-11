@@ -5,7 +5,7 @@
 :root {
     /* colors */
     --main-white:  #F4F5F1;
-    --aside-blue: #004bff;
+    --main-blue: #004bff;
     --shade-color: #b1c9ff;
 
     /* font family */
@@ -20,8 +20,96 @@
 body {
     background-color: var(--main-white);
     font-family: var(--ff-noto-sans);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2dvw;
 }
 
 .container {
+    max-width: 1000px;
+}
 
+
+/* header section -----------------------------------------------------*/
+header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    .header-img-and-text {
+        h1 {
+            font-size: var(--fs-large);
+            color: var(--main-blue);
+            text-align: center;
+            position: absolute;
+            font-size: 2.6rem;
+            width: 350px;
+            margin: 0;
+            bottom: 0;
+         
+        }
+        .header-img {
+            min-width: 350px;
+            max-width: 350px;
+            z-index: 1;
+            .profile-pic {
+                max-width: 100%;
+                height: auto;
+
+            }
+        }
+    }
+    .about {
+        background-color: var(--shade-color);
+        padding: 0 1rem 1rem 1rem;
+        border-radius: 1rem;
+
+        h2 {
+            font-size: var(--fs-medium);
+        }
+        p {
+            font-size: var(--fs-small);
+            line-height: 1.5;
+        }
+        .icon-container {
+            display: flex;
+            justify-content: end;
+            gap: 1rem;
+                img { 
+                    width: 3rem;
+                    height: auto;
+                    min-width: 0;
+                }
+
+        }
+    }
+}
+
+/* main section ---------------------------------------------------------------- */
+main {
+
+    .card {
+
+        .card-img {
+            width: 300px;
+            height: 300px;
+            background-color: var(--shade-color);
+        }
+        .card-text {
+
+            .card-title {
+
+                display: flex;
+                justify-content: space-between;
+                .card-link {
+                    display: flex;
+                    gap: 1rem;
+                    img {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
 }
